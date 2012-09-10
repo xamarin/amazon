@@ -21,7 +21,7 @@ using Amazon.Util;
 using Amazon.Runtime;
 
 using System.Globalization;
-using System.Web;
+//using System.Web;
 using System.Security.Cryptography;
 
 namespace Amazon.Runtime.Internal.Auth

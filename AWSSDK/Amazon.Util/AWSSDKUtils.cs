@@ -165,6 +165,9 @@ namespace Amazon.Util
         {
             try
             {
+#if MONOTOUCH
+				return "4.0";				
+#else
                 if (Environment.Version.Major >= 4 && Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Net Framework Setup\\NDP\\v4") != null)
                     return "4.0";
                 if (Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Net Framework Setup\\NDP\\v3.5") != null)
@@ -173,6 +176,7 @@ namespace Amazon.Util
                     return "3.0";
                 if (Registry.LocalMachine.OpenSubKey(@"Software\\Microsoft\\Net Framework Setup\\NDP\\v2.0.50727") != null)
                     return "2.0";
+#endif
             }
             catch
             {

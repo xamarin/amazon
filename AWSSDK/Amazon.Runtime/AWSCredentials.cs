@@ -429,6 +429,9 @@ namespace Amazon.Runtime
         /// </summary>
         public EnvironmentAWSCredentials()
         {
+
+			//TODO: This needs fixed!!!!!!
+			/*
             NameValueCollection appConfig = ConfigurationManager.AppSettings;
 
             var accessKey = appConfig[ACCESSKEY];
@@ -440,6 +443,8 @@ namespace Amazon.Runtime
                 throw new ArgumentException(string.Format("Secret Key could not be found.  Add an appsetting to your App.config with the name {0} with a value of your secret key.", SECRETKEY));
 
             this._wrappedCredentials = new ImmutableCredentials(accessKey, secretKey, null, false);
+            */
+
         }
 
         #endregion

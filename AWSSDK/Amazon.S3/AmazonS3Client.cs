@@ -2644,13 +2644,13 @@ namespace Amazon.S3
             {
                 if (request.IsSetInputStream())
                 {
-                    request.InputStream = new PartStreamWrapper(request.InputStream, request.PartSize);
+                    request.InputStream = new Amazon.S3.Model.PartStreamWrapper(request.InputStream, request.PartSize);
                 }
                 else
                 {
                     fileStream = File.OpenRead(request.FilePath);
                     fileStream.Position = request.FilePosition;
-                    request.InputStream = new PartStreamWrapper(fileStream, request.PartSize);
+                    request.InputStream = new Amazon.S3.Model.PartStreamWrapper(fileStream, request.PartSize);
                 }
 
                 ConvertUploadPart(request);
@@ -6880,7 +6880,7 @@ namespace Amazon.S3
         /// </summary>
         /// <param name="headers">The header collection to add the new header to</param>
         /// <param name="mfaCodes">The tuple of the authentication device codes</param>
-        void setMfaHeader(WebHeaderCollection headers, Tuple<string, string> mfaCodes)
+        void setMfaHeader(WebHeaderCollection headers, Amazon.S3.Model.Tuple<string, string> mfaCodes)
         {
             headers[S3Constants.AmzMfaHeader] = String.Concat(mfaCodes.First, " ", mfaCodes.Second);
         }
