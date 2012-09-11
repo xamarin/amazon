@@ -165,7 +165,7 @@ namespace Amazon.Util
         {
             try
             {
-#if MONOTOUCH
+#if MOBILE
 				return "4.0";				
 #else
                 if (Environment.Version.Major >= 4 && Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Net Framework Setup\\NDP\\v4") != null)

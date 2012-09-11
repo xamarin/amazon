@@ -17,7 +17,7 @@
     <DebugType>full</DebugType>
     <Optimize>False</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;MONOTOUCH;</DefineConstants>
+    <DefineConstants>DEBUG;NET_2_0;MOBILE;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
@@ -29,7 +29,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
-    <DefineConstants>MONOTOUCH;</DefineConstants>
+    <DefineConstants>NET_2_0;MOBILE;</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -37,13 +37,13 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="ThirdParty\" />
     <Folder Include="Amazon.Auth\" />
     <Folder Include="Amazon.AutoScaling\" />
-    <Folder Include="Mono\" />
     <Folder Include="Amazon.Runtime\" />
     <Folder Include="Amazon.SecurityToken\" />
     <Folder Include="Amazon.Util\" />
@@ -325,7 +325,6 @@
     <Compile Include="Amazon.AutoScaling\Model\Internal\MarshallTransformations\UpdateAutoScalingGroupRequestMarshaller.cs" />
     <Compile Include="Amazon.AutoScaling\Model\Internal\MarshallTransformations\UpdateAutoScalingGroupResponseUnmarshaller.cs" />
     <Compile Include="RegionEndpoint.cs" />
-    <Compile Include="Mono\IOrderedDictionary.cs" />
     <Compile Include="Amazon.Runtime\AWSCredentials.cs" />
     <Compile Include="Amazon.Runtime\AmazonClientException.cs" />
     <Compile Include="Amazon.Runtime\AmazonServiceException.cs" />
@@ -541,7 +540,6 @@
     <Compile Include="Amazon.S3\Transfer\Internal\UploadDirectoryCommand.cs" />
     <Compile Include="Amazon.S3\Util\AmazonS3Util.cs" />
     <Compile Include="Amazon.S3\Util\S3Constants.cs" />
-    <Compile Include="Mono\InvalidDataException.cs" />
     <Compile Include="Amazon.CloudWatch\AmazonCloudWatch.cs" />
     <Compile Include="Amazon.CloudWatch\AmazonCloudWatchClient.cs" />
     <Compile Include="Amazon.CloudWatch\AmazonCloudWatchConfig.cs" />
@@ -1688,9 +1686,12 @@
     <Compile Include="Amazon.ElasticLoadBalancing\Model\Internal\MarshallTransformations\SetLoadBalancerPoliciesOfListenerResponseUnmarshaller.cs" />
     <Compile Include="Amazon.ElasticLoadBalancing\Model\Internal\MarshallTransformations\SetLoadBalancerPoliciesOfListenerResultUnmarshaller.cs" />
     <Compile Include="Amazon.ElasticLoadBalancing\Model\Internal\MarshallTransformations\SourceSecurityGroupUnmarshaller.cs" />
+    <Compile Include="AWSClientFactory.cs" />
+    <Compile Include="ThirdParty\Mono\IOrderedDictionary.cs" />
+    <Compile Include="ThirdParty\Mono\InvalidDataException.cs" />
+    <Compile Include="ThirdParty\Mono\ConfigurationManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="endpoints.xml" />
     <None Include="Amazon.S3\Model\CompleteMultipartUploadResponse.xslt" />
     <None Include="Amazon.S3\Model\CopyObjectResponse.xslt" />
     <None Include="Amazon.S3\Model\CopyPartResponse.xslt" />
@@ -1850,5 +1851,10 @@
     <None Include="Amazon.EC2\Model\UnmonitorInstancesResponse.xslt" />
     <None Include="Amazon.SimpleNotificationService\Model\ResponseTransformer.xslt" />
     <None Include="Amazon.SimpleDB\Model\ResponseTransformer.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="endpoints.xml">
+      <LogicalName>AWSSDK.endpoints.xml</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
