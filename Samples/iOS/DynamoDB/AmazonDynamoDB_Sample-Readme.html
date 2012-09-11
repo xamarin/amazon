@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Readme: AWS SDK for .NET - Amazon DynamoDB Sample</title>
+<!--
+These style should be copied directly from the common CSS.
+We include them in the document to make distributing files
+easier.
+-->
+<style type="text/css">
+/* --------------------------------------------- */
+/*  AWS Developer Content Styles                 */
+/* --------------------------------------------- */
+
+body, div, p, td, th {
+    font-family : helvetica,sans-serif, arial;
+    font-size : 12px;
+    color : #000000;
+}
+
+.aws-h1, h1{
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+.aws-h2, h2{
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 14px;
+	color: #c60;
+}
+.aws-h3, h3{
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+}
+
+/*table ID selector styles*/
+#aws-table {
+  border-top: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  width:95%;
+}
+
+#aws-table td{
+  font-size: 12px;
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  vertical-align:top;
+}
+
+#aws-table th {
+  font-size: 12px;
+  padding: 5px 5px 5px 5px;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  vertical-align:top;
+  background-color: #eeeeee;
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*code, note, and example styles*/
+.aws-code .programlisting{
+	font-family: "Courier New", Courier, mono;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #000066;
+	padding: 5px;
+	background-color: #eff7ff;
+	border: 1px dashed #333;
+	width:99%;
+}
+.aws-code-inline {
+	font-family: "Courier New", Courier, mono;
+	font-size: 11px;
+}
+.aws-note {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding: 10px;
+	width:95%;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+</style>
+</head>
+<body>
+<h1>Amazon DynamoDB Sample</h1>
+This is a sample that demonstrates how to make basic requests to Amazon DynamoDB using the AWS SDK for .NET.
+<h2>Prerequisites</h2>
+<ul>
+  <li>You must have a valid Amazon Web Services developer account.</li>
+  <li>Requires the AWS SDK for .NET. For more information on the AWS SDK for .NET, see <a href="http://aws.amazon.com/sdkfornet">http://aws.amazon.com/sdkfornet</a>.</li>
+  <li>You must be signed up to use Amazon DynamoDB. For more information on Amazon DynamoDB, see <a href="http://aws.amazon.com/DynamoDB">http://aws.amazon.com/dynamodb</a>. </li>
+</ul>
+<h2>Running the Sample</h2>
+<p>The basic steps for running the Amazon DynamoDB sample are:</p>
+<ol>
+  <li>Open the <code>AmazonDynamoDB_Sample.sln</code> file in Visual Studio.</li>
+  <li>Open the <code>App.config</code> file.</li>
+  <li>Enter your Access Key ID and Secret Access Key:<br />
+    <pre>&lt;add key=&quot;AWSAccessKey&quot; value=&quot;<em>&lt;Your Access Key ID&gt;</em>&quot;/&gt;
+&lt;add key=&quot;AWSSecretKey&quot; value=&quot;<em>&lt;Your Secret Access Key&gt;</em>&quot;/&gt;</pre>
+  </li>
+  <li>Save the file.</li>
+  <li>Run the sample in Debug mode by typing F5.</li>
+</ol>
+<p>See the <a href="http://docs.amazonwebservices.com/AmazonDynamoDB/latest/GettingStartedGuide/">Amazon DynamoDB Getting Started Guide </a>for step-by-step instructions on running this sample.</p>
+</body>
+</html>

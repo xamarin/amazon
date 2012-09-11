@@ -987,7 +987,7 @@ namespace Amazon.Runtime
                     return reader.ReadToEnd();
                 }
             }
-            catch (WebException)
+            catch (WebException ex)
             {
                 throw new AmazonServiceException("Unable to reach credentials server");
             }
