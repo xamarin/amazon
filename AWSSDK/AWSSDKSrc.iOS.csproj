@@ -1692,35 +1692,7 @@
     <Compile Include="ThirdParty\Mono\ConfigurationManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Amazon.S3\Model\CompleteMultipartUploadResponse.xslt" />
-    <None Include="Amazon.S3\Model\CopyObjectResponse.xslt" />
-    <None Include="Amazon.S3\Model\CopyPartResponse.xslt" />
-    <None Include="Amazon.S3\Model\DeleteObjectsResponse.xslt" />
-    <None Include="Amazon.S3\Model\GetACLResponse.xslt" />
-    <None Include="Amazon.S3\Model\GetBucketLocationResponse.xslt" />
-    <None Include="Amazon.S3\Model\GetBucketLoggingResponse.xslt" />
-    <None Include="Amazon.S3\Model\GetBucketTaggingResponse.xslt" />
-    <None Include="Amazon.S3\Model\GetBucketVersioningResponse.xslt" />
-    <None Include="Amazon.S3\Model\GetBucketWebsiteResponse.xslt" />
-    <None Include="Amazon.S3\Model\GetCORSConfigurationResponse.xslt" />
-    <None Include="Amazon.S3\Model\GetLifecycleConfigurationResponse.xslt" />
-    <None Include="Amazon.S3\Model\GetNotificationConfigurationResponse.xslt" />
-    <None Include="Amazon.S3\Model\InitiateMultipartUploadResponse.xslt" />
-    <None Include="Amazon.S3\Model\ListBucketsResponse.xslt" />
-    <None Include="Amazon.S3\Model\ListMultipartUploadsResponse.xslt" />
-    <None Include="Amazon.S3\Model\ListObjectsResponse.xslt" />
-    <None Include="Amazon.S3\Model\ListPartsResponse.xslt" />
-    <None Include="Amazon.S3\Model\ListVersionsResponse.xslt" />
-    <None Include="Amazon.S3\Model\S3ErrorResponse.xslt" />
-    <None Include="Amazon.EC2\Model\ActivateLicenseResponse.xslt" />
-    <None Include="Amazon.EC2\Model\AllocateAddressResponse.xslt" />
-    <None Include="Amazon.EC2\Model\AssignPrivateIpAddressesResponse.xslt" />
-    <None Include="Amazon.EC2\Model\AssociateAddressResponse.xslt" />
     <None Include="Amazon.EC2\Model\AssociateDhcpOptionsResponse.xslt" />
-    <None Include="Amazon.EC2\Model\AssociateRouteTableResponse.xslt" />
-    <None Include="Amazon.EC2\Model\AttachInternetGatewayResponse.xslt" />
-    <None Include="Amazon.EC2\Model\AttachNetworkInterfaceResponse.xslt" />
-    <None Include="Amazon.EC2\Model\AttachVolumeResponse.xslt" />
     <None Include="Amazon.EC2\Model\AttachVpnGatewayResponse.xslt" />
     <None Include="Amazon.EC2\Model\AuthorizeSecurityGroupEgressResponse.xslt" />
     <None Include="Amazon.EC2\Model\AuthorizeSecurityGroupIngressResponse.xslt" />
@@ -1850,11 +1822,39 @@
     <None Include="Amazon.EC2\Model\UnassignPrivateIpAddressesResponse.xslt" />
     <None Include="Amazon.EC2\Model\UnmonitorInstancesResponse.xslt" />
     <None Include="Amazon.SimpleNotificationService\Model\ResponseTransformer.xslt" />
-    <None Include="Amazon.SimpleDB\Model\ResponseTransformer.xslt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="endpoints.xml">
       <LogicalName>AWSSDK.endpoints.xml</LogicalName>
     </EmbeddedResource>
+    <EmbeddedResource Include="Amazon.S3\Model\CompleteMultipartUploadResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\CopyObjectResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\CopyPartResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\DeleteObjectsResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\GetACLResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\GetBucketLocationResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\GetBucketLoggingResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\GetBucketTaggingResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\GetBucketVersioningResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\GetBucketWebsiteResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\GetCORSConfigurationResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\GetLifecycleConfigurationResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\GetNotificationConfigurationResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\InitiateMultipartUploadResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\ListBucketsResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\ListMultipartUploadsResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\ListObjectsResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\ListPartsResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\ListVersionsResponse.xslt" />
+    <EmbeddedResource Include="Amazon.S3\Model\S3ErrorResponse.xslt" />
+    <EmbeddedResource Include="Amazon.SimpleDB\Model\ResponseTransformer.xslt" />
+    <EmbeddedResource Include="Amazon.EC2\Model\ActivateLicenseResponse.xslt" />
+    <EmbeddedResource Include="Amazon.EC2\Model\AllocateAddressResponse.xslt" />
+    <EmbeddedResource Include="Amazon.EC2\Model\AssignPrivateIpAddressesResponse.xslt" />
+    <EmbeddedResource Include="Amazon.EC2\Model\AssociateAddressResponse.xslt" />
+    <EmbeddedResource Include="Amazon.EC2\Model\AssociateRouteTableResponse.xslt" />
+    <EmbeddedResource Include="Amazon.EC2\Model\AttachInternetGatewayResponse.xslt" />
+    <EmbeddedResource Include="Amazon.EC2\Model\AttachNetworkInterfaceResponse.xslt" />
+    <EmbeddedResource Include="Amazon.EC2\Model\AttachVolumeResponse.xslt" />
   </ItemGroup>
 </Project>
