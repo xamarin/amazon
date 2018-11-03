@@ -1,5 +1,19 @@
-[Bb]in
-[Dd]ebug*/
-[Oo]bj
-.DS_Store
-*.userprefs
+######################################
+# Visual Studio per-user settings data
+######################################
+*.suo
+*.user
+
+####################
+# Build/Test folders
+####################
+
+**/bin/
+**/obj/
+**/TestResults/
+**/Temp/
+**/NuGet.exe
+**/buildlogs/
+**/packages
+
+**/project.lock.json
